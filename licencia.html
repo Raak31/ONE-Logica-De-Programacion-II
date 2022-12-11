@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<h3> Verificación de Datos Para Conducir </h3>
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    saltarLinea();
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+
+    if ((edad >= 18) && (tieneLicencia == "S")){
+        imprimir("Tienes permiso para conducir B)"); 
+    } else {
+        imprimir("No tienes permiso para conducir >:("); 
+    }
+
+</script>

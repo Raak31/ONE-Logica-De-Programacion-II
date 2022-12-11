@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+<h2> Adivina El Numero </h2>
+<script>
+
+function saltarlinea(){
+	document.write("<br><br><br>");
+}
+
+function imprimir(frase){
+	document.write(frase);
+	saltarlinea();
+}
+
+var numerosistema = Math.round(Math.random()*10);
+var intentos = 3;
+var contador = 1;
+
+
+while (contador <= intentos) {
+
+	var numerolanzado = parseInt(prompt("Ingrese un numero entre 0 y 10: "));
+
+		if (numerosistema == numerolanzado) {
+
+			alert("Acertaste! :DDDD, en el intento " + contador + ", el numero pensado es:" + numerosistema);
+			break;
+
+		} else {
+			
+			alert("Fallaste :(")
+
+		}
+
+	contador++
+}
+
+if (numerosistema == numerolanzado) {
+
+			imprimir("Acertaste! :DDDD, en el intento " + contador + ", el numero pensado es: " + numerosistema);
+
+		} else {
+			
+			imprimir("Fallaste :( , el numero pensado es: " + numerosistema);
+
+		}
+
+
+imprimir("FIN");
+
+</script>
+
+
